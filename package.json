@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.1562.0",
+    "jmespath": "^0.16.0"
+  }
+}

@@ -1,0 +1,16 @@
+service: Test-Integration-AWS-Serverless
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  Test-Integration-AWS:  # Nombre de la función Lambda existente
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /Insert_User
+          method: post
+      - httpApi:
+          path: /BulkLoad_Users
+          method: get
